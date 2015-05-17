@@ -60,6 +60,9 @@ assegnare eventuali regole css a `#cookie_policy_banner_wrapper`:
 #cookie_policy_banner_wrapper, #cookie_policy_banner_wrapper > div { ... }
 ```
 
+**NB: il testo dell'avviso è puramente indicativo e va verificato sulla base del caratteristiche del sito e del tipo di cookie utilizzati. **
+
+
 ## Disclaimer
 Questo  programma è  software  libero; è  lecito redistribuirlo  o
 modificarlo secondo i termini  della Licenza Pubblica Generica GNU
