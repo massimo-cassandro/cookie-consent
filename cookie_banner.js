@@ -1,11 +1,12 @@
+/*@license
+ Script per gestione consenso Cookie
+ Massimo Cassandro 2015
+ https://github.com/massimo-cassandro/consenso-cookie
+*/
+
 /* jshint undef:false */
 (function() {
 	"use strict";
-	/*
-		ISTRUZIONI:
-		vedi https://bitbucket.org/geotn/thebox-docs/wiki/siti_agenzie/banner_cookie.md
-	*/
-	
   	try {
 
 		var retrieveFromCookie=function(_var) {
