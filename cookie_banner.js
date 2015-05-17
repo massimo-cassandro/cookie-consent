@@ -51,11 +51,9 @@
 		if(cookie_consenso_privacy === null) {
 
 			if(cookie_policy_banner && cookie_policy_wrapper) { // extra check per evitare errori js
-				cookie_policy_banner.removeAttribute("hidden");
-				cookie_policy_banner.setAttribute('display', 'block');
+				cookie_policy_wrapper.innerHTML = cookie_policy_banner.innerHTML;
 				cookie_policy_wrapper.removeAttribute("hidden");
 				cookie_policy_wrapper.setAttribute('display', 'block');
-				cookie_policy_wrapper.innerHTML = cookie_policy_banner.innerHTML;
 				cookie_policy_banner.remove();
 				document.getElementById('cookie_policy_button_OK').onclick = setPrivacyCookie;
 			}
@@ -67,5 +65,4 @@
 	} catch(err) { //throw "error"
 	    console.log(err);
 	}
-
 })();
