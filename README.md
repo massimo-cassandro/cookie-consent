@@ -36,10 +36,10 @@ Se necessario, possono essere aggiunti div contenitore in base alle necessità d
 		<div class="row">
 			<div class="col-sm-10">
 				<p><small>Questo sito non utilizza cookie di profilazione e utilizza alcuni cookie di terze parti per offrirti il miglior servizio possibile.
-				Proseguendo nella navigazione acconsenti all’utilizzo di cookie in conformit&agrave; alla nostra <a href="/pagina-informativa-privacy.html"" rel="nofollow">Cookie Policy</a>.</small></p>
+				Proseguendo nella navigazione acconsenti all’utilizzo di cookie in conformit&agrave; alla nostra <a href="/pagina-informativa-privacy.html" rel="nofollow">Cookie Policy</a>.</small></p>
 			</div>
 			<div class="col-sm-2">
-				<p><button type="button" id="cookie_policy_button_OK" class="btn btn-default btn-block">Ho capito</button></p>
+				<p><button type="button" id="cookie_policy_button_OK" class="btn btn-default btn-block">&times;</button></p>
 			</div>
 		</div>
 	</div>
