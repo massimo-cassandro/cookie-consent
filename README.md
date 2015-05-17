@@ -59,3 +59,14 @@ assegnare eventuali regole css a `#cookie_policy_banner_wrapper`:
 ```
 #cookie_policy_banner_wrapper, #cookie_policy_banner_wrapper > div { ... }
 ```
+
+## Disclaimer
+Questo  programma è  software  libero; è  lecito redistribuirlo  o
+modificarlo secondo i termini  della Licenza Pubblica Generica GNU
+come è pubblicata dalla Free  Software Foundation; o la versione 2
+della licenza o (a propria scelta) una versione successiva.
+
+Questo programma  è distribuito nella  speranza che sia  utile, ma
+SENZA  ALCUNA GARANZIA;  senza  neppure la  garanzia implicita  di
+NEGOZIABILITÀ  o di  APPLICABILITÀ PER  UN PARTICOLARE  SCOPO.  Si
+veda la Licenza Pubblica Generica GNU per avere maggiori dettagli.
