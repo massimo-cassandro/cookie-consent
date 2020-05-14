@@ -1,75 +1,36 @@
-#Script per informativa Cookie
+# Cookie consent banner
 
-`cookie_banner.js` è un piccolo script per visualizzare l'avviso informativo sull'utilizzo dei cookie.
+**v.2 (consenso-cookie in v.1)**
 
-Ogni pagina che richiama questo script, deve contenere il markup per la visualizzazione dell'informativa sui cookie.
+<https://github.com/massimo-cassandro/m-cookie-consent>
 
+Small and customizable script to display a cookie consent banner
 
-`cookie_banner.js` non utilizza alcun framework js.
+## Using Cookie consent banner
+Import `m-cookie-consent.js` as es6 module to your project and add
+`m-cookie-consent.scss` to your styles (you can also use the compiled css verione in the demo folder).
 
-In ogni pagina, prima della chiamata del file `cookie_banner.js` 
-deve essere presente il markup per la visualizzazione dell'avviso.
-
-Il markup può essere inserito in fondo alla pagina per non essere rilevato come prima stringa dai robot di indicizzazione e va impostato come `hidden` (è possibile utilizzare anche `style="display:none"`) o messo all'interno di un elemento `hidden`:
-
-
-```
-<div id="cookie_policy_banner" hidden>
-	<div>
-		<div>
-			Questo sito non utilizza cookie di profilazione e utilizza alcuni cookie di terze parti per offrirti il miglior servizio possibile.
-			Proseguendo nella navigazione acconsenti all’utilizzo di cookie in conformit&agrave; alla nostra <a href="/pagina-informativa-privacy.html" rel="nofollow">Cookie Policy</a>.
-		</div>
-		<div>
-			<button type="button" id="cookie_policy_button_OK">OK</button>
-		</div>
-	</div>
-</div>
-```
-I vari elementi (`div`, testo e pulsanti) possono essere formattati in base alle specifiche del framework utilizzato, ma è essenziale che il `div` più esterno abbia l'attributo `id="cookie_policy_banner"` e il pulsante abbia `id="cookie_policy_button_OK"`.
-
-Se necessario, possono essere aggiunti div contenitore in base alle necessità del framework. Ad esempio con bootstrap:
-
-```
-<div id="cookie_policy_banner" hidden>
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-10">
-				<p><small>Questo sito non utilizza cookie di profilazione e utilizza alcuni cookie di terze parti per offrirti il miglior servizio possibile.
-				Proseguendo nella navigazione acconsenti all’utilizzo di cookie in conformit&agrave; alla nostra <a href="/pagina-informativa-privacy.html" rel="nofollow">Cookie Policy</a>.</small></p>
-			</div>
-			<div class="col-sm-2">
-				<p><button type="button" id="cookie_policy_button_OK" class="btn btn-default btn-block">&times;</button></p>
-			</div>
-		</div>
-	</div>
-</div>
+```javascript
+import {m_cookie_consent} from './path/to/m-cookie-consent'
 ```
 
-Il punto in cui lo script posizionerà il markup visualizzato dagli utenti viene indicato dall'elemento
+To activate the banner, invoke the function adding some parameter:
 
-```
-<div id="cookie_policy_banner_wrapper"></div>
-```
-
-NB:
-nella formattazione del banner, non tenere conto dell'ID `#cookie_policy_banner` che viene rimosso durante l'operazione,
-assegnare eventuali regole css a `#cookie_policy_banner_wrapper`:
-
-```
-#cookie_policy_banner_wrapper, #cookie_policy_banner_wrapper > div { ... }
+```javascript
+m_cookie_consent({
+  message: '...',
+  btn_text: '...',
+  banner_aria_label: '...',
+  btn_aria_label: '...'
+});
 ```
 
-**NB: il testo dell'avviso è puramente indicativo e va verificato sulla base del caratteristiche del sito e del tipo di cookie utilizzati.**
+Where:
 
+* `message` is the text to be displayed in the banner (html allowed). It may contain the link to your privacy policy page
+* `btn_text` is the text of the dismiss button (html allowed)
+* `banner_aria_label` and `btn_aria_label` are text for ARIA label attributes
 
-## Disclaimer
-Questo  programma è  software  libero; è  lecito redistribuirlo  o
-modificarlo secondo i termini  della Licenza Pubblica Generica GNU
-come è pubblicata dalla Free  Software Foundation; o la versione 2
-della licenza o (a propria scelta) una versione successiva.
+The banner is positioned at page bottom right. To change this behavior you have to change the scss/css file.
 
-Questo programma  è distribuito nella  speranza che sia  utile, ma
-SENZA  ALCUNA GARANZIA;  senza  neppure la  garanzia implicita  di
-NEGOZIABILITÀ  o di  APPLICABILITÀ PER  UN PARTICOLARE  SCOPO.  Si
-veda la Licenza Pubblica Generica GNU per avere maggiori dettagli.
+If the banner is displayed, a `div.m-cookie-consent` element is appended to your page.

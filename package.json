@@ -1,0 +1,24 @@
+{
+  "name": "m-cookie-consent",
+  "version": "2.0.0",
+  "description": "Small and customizable script to display a cookie consent banner",
+  "main": "m-cookie-consent.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/massimo-cassandro/m-cookie-consent.git"
+  },
+  "keywords": [
+    "cookies",
+    "gdpr",
+    "privacy"
+  ],
+  "author": "Massimo Cassandro",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/massimo-cassandro/m-cookie-consent/issues"
+  },
+  "homepage": "https://github.com/massimo-cassandro/m-cookie-consent#readme"
+}

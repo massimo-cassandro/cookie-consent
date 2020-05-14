@@ -1,0 +1,74 @@
+$mcc-banner-bg-color: #444!default;
+$mcc-banner-text-color: #fff!default;
+$mcc-font-family: false!default; // set to false to inherit document font-family
+$mcc-button-bg-color: #fc0!default;
+$mcc-button-text-color: #000!default;
+$mcc-button-hover-bg-color: darken(#fc0, 10)!default;
+$mcc-button-hover-text-color: #000!default;
+$mcc-box-shadow: 0 0 4px rgba(#000, .6); // set to false or none to disable
+
+.m-cookie-consent {
+  display:flex;
+  flex-direction: column;
+
+  box-sizing: border-box;
+  @if $mcc-box-shadow {
+    box-shadow: $mcc-box-shadow;
+  }
+
+  position: fixed;
+  bottom:1rem;
+  right:1rem;
+  width:calc(100% - 2rem);
+
+  @if $mcc-font-family {
+    font-family: $mcc-font-family;
+  }
+
+  background-color: $mcc-banner-bg-color;
+  color: $mcc-banner-text-color;
+  padding:.6rem;
+
+  .mcc__btn {
+    margin-top:2rem;
+    button {
+      display: block;
+      width:100%;
+      padding:.6rem 2rem;
+      border:none;
+      font-size:1.1em;
+      background-color: $mcc-button-bg-color;
+      color: $mcc-button-text-color;
+      border-radius:4px;
+
+      &:hover {
+        background-color: $mcc-button-hover-bg-color;
+        color: $mcc-button-hover-text-color;
+      }
+    }
+  }
+  .mcc-nowrap {
+    white-space: nowrap;
+  }
+
+  @media screen and (min-width:736px) {
+    max-width: 500px;
+    flex-direction: row;
+
+    .mcc__btn {
+      flex: 1 0 auto;
+      display:flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      margin:0 0 0 3rem;
+      button {
+        display: inline;
+
+      }
+    }
+  }
+
+  @media print {
+    display: none;
+  }
+}
