@@ -16,7 +16,6 @@
 	"use strict";
   	try {
 
-
 		var retrieveFromCookie=function(_var) {
 		    var c=document.cookie,
 		        cStart=c.indexOf(_var + '=');
@@ -37,6 +36,7 @@
 			cookie_policy_wrapper = document.getElementById('cookie_policy_banner_wrapper')
 		;
 
+
 		//console.log(cookie_consenso_privacy);
 
 		var setPrivacyCookie = function () {
@@ -44,12 +44,8 @@
 			CookieDate.setMonth( CookieDate.getMonth() +3 );
 			document.cookie = cookie_var +'=1; expires=' + CookieDate.toGMTString( ) + '; path=/';
 
-
-			// IE non supporta il metodo remove e richiede il check anche del parent element
-			//cookie_policy_banner.remove();
-			//cookie_policy_wrapper.remove();
-			if( cookie_policy_banner && cookie_policy_banner.parentElement ) { cookie_policy_banner.parentElement.removeChild(cookie_policy_banner); }
-			if( cookie_policy_wrapper  && cookie_policy_wrapper.parentElement ) { cookie_policy_wrapper.parentElement.removeChild(cookie_policy_wrapper); }
+			cookie_policy_banner.remove();
+			cookie_policy_wrapper.remove();
 		};
 
 		if(cookie_consenso_privacy === null) {
@@ -58,8 +54,7 @@
 				cookie_policy_wrapper.innerHTML = cookie_policy_banner.innerHTML;
 				cookie_policy_wrapper.removeAttribute("hidden");
 				cookie_policy_wrapper.setAttribute('display', 'block');
-				//cookie_policy_banner.remove();
-				cookie_policy_banner.parentElement.removeChild(cookie_policy_banner);
+				cookie_policy_banner.remove();
 				document.getElementById('cookie_policy_button_OK').onclick = setPrivacyCookie;
 			}
 
