@@ -29,6 +29,13 @@ $mcc-box-shadow: 0 0 4px rgba(#000, .6); // set to false or none to disable
   color: $mcc-banner-text-color;
   padding:.6rem;
 
+  animation: fadeIn 1s linear;
+  transition: opacity 1s linear;
+
+  &.mcc-fade-out {
+    opacity:0;
+  }
+
   .mcc__btn {
     margin-top:2rem;
     button {
@@ -70,5 +77,14 @@ $mcc-box-shadow: 0 0 4px rgba(#000, .6); // set to false or none to disable
 
   @media print {
     display: none;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
   }
 }

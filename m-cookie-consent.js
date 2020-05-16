@@ -8,7 +8,8 @@
 export function m_cookie_consent (params) {
   'use strict';
 
-  const default_params = {
+  const debug = false,
+    default_params = {
       message: `Questo sito utilizza cookie, anche di terze parti anonimizzati,
         per garantirti la migliore esperienza di navigazione.
         Continuando a navigare su questo sito, si acconsente al loro utilizzo.<br>
@@ -40,7 +41,7 @@ export function m_cookie_consent (params) {
       document.cookie = cookie_parts.join(';');
     };
 
-  if(!getConsentCookie()) {
+  if(!getConsentCookie() || debug) {
     params = Object.assign(default_params, params);
 
     document.body.insertAdjacentHTML('beforeend', `
@@ -57,11 +58,15 @@ export function m_cookie_consent (params) {
     `);
 
     let cookie_banner = document.querySelector('.m-cookie-consent');
+
     cookie_banner.querySelector('.mcc__btn button')
-      .addEventListener('click', () => {
+    cookie_banner.addEventListener('click', () => {
+      cookie_banner.addEventListener('transitionend', () => {
         cookie_banner.remove();
-        setConsentCookie();
-      }, false);
+      });
+      cookie_banner.classList.add('mcc-fade-out');
+      setConsentCookie();
+    }, false);
   }
 }
 
