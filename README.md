@@ -8,10 +8,32 @@ Small and customizable script to display a cookie consent banner
 
 ## Using Cookie consent banner
 Import `m-cookie-consent.js` as es6 module to your project and add
-`m-cookie-consent.scss` to your styles (you can also use the compiled css verione in the demo folder).
+`m-cookie-consent.scss` to your styles (you can also use the compiled css version in the demo folder).
 
 ```javascript
 import {m_cookie_consent} from './path/to/m-cookie-consent'
+```
+
+Many elements of scss can be customized:
+
+```scss
+$mcc-font-family: false; // set to false to inherit document font-family
+$mcc-banner-bg-color: #444;
+$mcc-banner-text-color: color-yiq($mcc-banner-bg-color);
+
+$mcc-link-color: #fc0;
+$mcc-link-hover-color: darken($mcc-link-color, 10);
+$mcc-link-text-decoration: none;
+$mcc-link-hover-text-decoration: underline;
+
+$mcc-button-bg-color: #fc0;
+$mcc-button-text-color: #000;
+$mcc-button-hover-bg-color: darken($mcc-button-bg-color, 10);
+$mcc-button-hover-text-color: #000;
+
+$mcc-box-shadow: 0 0 4px rgba(#000, .6); // set to false or none to disable
+
+@import './path/to/m-cookie-consent';
 ```
 
 To activate the banner, invoke the function adding some parameter:
@@ -21,7 +43,8 @@ m_cookie_consent({
   message: '...',
   btn_text: '...',
   banner_aria_label: '...',
-  btn_aria_label: '...'
+  btn_aria_label: '...',
+  btn_class: '...' 
 });
 ```
 
@@ -30,6 +53,7 @@ Where:
 * `message` is the text to be displayed in the banner (html allowed). It may contain the link to your privacy policy page
 * `btn_text` is the text of the dismiss button (html allowed)
 * `banner_aria_label` and `btn_aria_label` are text for ARIA label attributes
+* `btn_class` is an optional class(es) to be added to the dismiss button
 
 The banner is positioned at page bottom right. To change this behavior you have to change the scss/css file.
 
