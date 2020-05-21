@@ -83,6 +83,24 @@
 		"oAP": "/m-cookie-consent.code-workspace",
 		"oF": 0
 		},
+	"/m-cookie-consent.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/m-cookie-consent-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/m-cookie-consent.css.map": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/m-cookie-consent.css.map",
+		"oF": 0
+		},
 	"/m-cookie-consent.js": {
 		"bF": 0,
 		"ft": 64,

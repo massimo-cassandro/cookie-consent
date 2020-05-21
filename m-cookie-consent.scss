@@ -22,6 +22,7 @@ $mcc-box-shadow: 0 0 4px rgba(#000, .6)!default; // set to false or none to disa
   }
 
   position: fixed;
+  z-index: 10000;
   bottom:1rem;
   right:1rem;
   width:calc(100% - 2rem);
