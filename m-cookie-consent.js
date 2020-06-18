@@ -65,13 +65,13 @@ export function m_cookie_consent (params) {
     let cookie_banner = document.querySelector('.m-cookie-consent');
 
     cookie_banner.querySelector('.mcc__btn button')
-    cookie_banner.addEventListener('click', () => {
-      cookie_banner.addEventListener('transitionend', () => {
-        cookie_banner.remove();
-      });
-      cookie_banner.classList.add('mcc-fade-out');
-      setConsentCookie();
-    }, false);
+      .addEventListener('click', () => {
+        cookie_banner.addEventListener('transitionend', () => {
+          cookie_banner.remove();
+        });
+        cookie_banner.classList.add('mcc-fade-out');
+        setConsentCookie();
+      }, false);
   }
 }
 
