@@ -41,6 +41,19 @@
 		"oAP": "/.npmignore",
 		"oF": 0
 		},
+	"/_cookie-consent.scss": {
+		"aP": 1,
+		"bl": 1,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 1,
+		"oA": 0,
+		"oAP": "/demo/cookie-consent.css",
+		"oF": 2,
+		"oS": 3,
+		"sct": 0
+		},
 	"/cookie-consent-min.js": {
 		"bF": 0,
 		"ft": 64,
@@ -70,19 +83,6 @@
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
-		},
-	"/cookie-consent.scss": {
-		"aP": 1,
-		"bl": 1,
-		"dP": 10,
-		"ec": 1,
-		"ft": 4,
-		"ma": 1,
-		"oA": 0,
-		"oAP": "/demo/cookie-consent.css",
-		"oF": 2,
-		"oS": 3,
-		"sct": 0
 		},
 	"/demo/cookie-consent.css": {
 		"aP": 1,
