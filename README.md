@@ -1,17 +1,23 @@
 # Cookie consent banner
 
-**v.2 (consenso-cookie in v.1)**
+**v.2 (was “consenso-cookie” in v.1)**
 
-<https://github.com/massimo-cassandro/m-cookie-consent>
+<https://github.com/massimo-cassandro/cookie-consent>
 
 Small and customizable script to display a cookie consent banner
 
+## Installation
+
+```
+npm i --save @massimo-cassandro/cookie-consent
+```
+
 ## Using Cookie consent banner
-Import `m-cookie-consent.js` as es6 module to your project and add
-`m-cookie-consent.scss` to your styles (you can also use the compiled css version in the demo folder).
+Import `cookie-consent.js` as es6 module to your project and add
+`cookie-consent.scss` to your styles (you can also use the compiled css version in the demo folder).
 
 ```javascript
-import {m_cookie_consent} from './path/to/m-cookie-consent'
+import {cookie_consent} from './path/to/cookie-consent'
 ```
 
 Many elements of scss can be customized:
@@ -33,13 +39,13 @@ $mcc-button-hover-text-color: #000;
 
 $mcc-box-shadow: 0 0 4px rgba(#000, .6); // set to false or none to disable
 
-@import './path/to/m-cookie-consent';
+@import './path/to/cookie-consent';
 ```
 
 To activate the banner, invoke the function adding some parameter:
 
 ```javascript
-m_cookie_consent({
+cookie_consent({
   message: '...',
   btn_text: '...',
   banner_aria_label: '...',
@@ -57,4 +63,4 @@ Where:
 
 The banner is positioned at page bottom right. To change this behavior you have to change the scss/css file.
 
-If the banner is displayed, a `div.m-cookie-consent` element is appended to your page.
+If the banner is displayed, a `div.cookie-consent` element is appended to your page.

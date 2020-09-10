@@ -41,30 +41,73 @@
 		"oAP": "/.npmignore",
 		"oF": 0
 		},
+	"/cookie-consent-min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/cookie-consent-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/cookie-consent.code-workspace": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/cookie-consent.code-workspace",
+		"oF": 0
+		},
+	"/cookie-consent.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/cookie-consent-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/cookie-consent.scss": {
+		"aP": 1,
+		"bl": 1,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 1,
+		"oA": 0,
+		"oAP": "/demo/cookie-consent.css",
+		"oF": 2,
+		"oS": 3,
+		"sct": 0
+		},
+	"/demo/cookie-consent.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/demo/cookie-consent-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/demo/cookie-consent.css.map": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/demo/cookie-consent.css.map",
+		"oF": 0
+		},
 	"/demo/demo.html": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/demo/demo.html",
-		"oF": 0
-		},
-	"/demo/m-cookie-consent.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/demo/m-cookie-consent-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/demo/m-cookie-consent.css.map": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/demo/m-cookie-consent.css.map",
 		"oF": 0
 		},
 	"/LICENSE": {
@@ -74,56 +117,6 @@
 		"oA": 0,
 		"oAP": "/LICENSE",
 		"oF": 0
-		},
-	"/m-cookie-consent.code-workspace": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/m-cookie-consent.code-workspace",
-		"oF": 0
-		},
-	"/m-cookie-consent.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/m-cookie-consent-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/m-cookie-consent.css.map": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/m-cookie-consent.css.map",
-		"oF": 0
-		},
-	"/m-cookie-consent.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/m-cookie-consent-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/m-cookie-consent.scss": {
-		"aP": 1,
-		"bl": 1,
-		"dP": 10,
-		"ec": 1,
-		"ft": 4,
-		"ma": 1,
-		"oA": 0,
-		"oAP": "/m-cookie-consent.css",
-		"oF": 0,
-		"oS": 3,
-		"sct": 0
 		},
 	"/package.json": {
 		"ft": 524288,

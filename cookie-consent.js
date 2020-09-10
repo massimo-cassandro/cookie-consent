@@ -2,10 +2,10 @@
  *
  * Cookie Consent Manager
  * Massimo Cassandro 2015-2020
- * https://github.com/massimo-cassandro/m-cookie-consent
+ * https://github.com/massimo-cassandro/cookie-consent
  *
  */
-export function m_cookie_consent (params) {
+export function cookie_consent (params) {
   'use strict';
 
   const debug = false,
@@ -22,7 +22,7 @@ export function m_cookie_consent (params) {
       btn_class: ''
     },
 
-    consent_cookie='m_cookie_consent=accepted',
+    consent_cookie='cookie_consent=accepted',
     getConsentCookie = () => {
       if(document.cookie.indexOf(consent_cookie) !== -1) {
         return true;
@@ -51,7 +51,7 @@ export function m_cookie_consent (params) {
 
     document.body.insertAdjacentHTML('beforeend', `
       <!--googleoff: all-->
-      <div class="m-cookie-consent" role="dialog" aria-live="polite" aria-label="${params.banner_aria_label}" aria-describedby="mcc-descr">
+      <div class="cookie-consent" role="dialog" aria-live="polite" aria-label="${params.banner_aria_label}" aria-describedby="mcc-descr">
         <div id="mcc-descr">${params.message}</div>
         <div class="mcc__btn">
           <button type="button" aria-label="${params.btn_aria_label}"${params.btn_class}>
@@ -62,7 +62,7 @@ export function m_cookie_consent (params) {
       <!--googleon: all-->
     `);
 
-    let cookie_banner = document.querySelector('.m-cookie-consent');
+    let cookie_banner = document.querySelector('.cookie-consent');
 
     cookie_banner.querySelector('.mcc__btn button')
       .addEventListener('click', () => {

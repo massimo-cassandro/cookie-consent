@@ -6,6 +6,6 @@
 	],
 	"settings": {
 		"preview-in-browser.domain": "http://cookie-consent:8888/",
-		"preview-in-browser.removeStartString": "/Users/max/Sites/m-cookie-consent/"
+		"preview-in-browser.removeStartString": "/Users/max/Sites/cookie-consent/"
 	}
 }

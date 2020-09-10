@@ -1,20 +1,20 @@
 $mcc-font-family: false!default; // set to false to inherit document font-family
 $mcc-banner-bg-color: #444!default;
-$mcc-banner-text-color: color-yiq($mcc-banner-bg-color)!default;
+$mcc-banner-text-color: #fff!default;
 
 $mcc-link-color: #fc0!default;
-$mcc-link-hover-color: darken($mcc-link-color, 10)!default;
+$mcc-link-hover-color: #987a05!default;
 $mcc-link-text-decoration: none!default;
 $mcc-link-hover-text-decoration: underline!default;
 
 $mcc-button-bg-color: #fc0!default;
 $mcc-button-text-color: #000!default;
-$mcc-button-hover-bg-color: darken($mcc-button-bg-color, 10)!default;
+$mcc-button-hover-bg-color: #987a05!default;
 $mcc-button-hover-text-color: #000!default;
 
-$mcc-box-shadow: 0 0 4px rgba(#000, .6)!default; // set to false or none to disable
+$mcc-box-shadow: 0 0 4px rgba(0,0,0, .6)!default; // set to false or none to disable
 
-.m-cookie-consent {
+.cookie-consent {
 
   box-sizing: border-box;
   @if $mcc-box-shadow {
