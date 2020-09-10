@@ -1,6 +1,6 @@
 {
   "name": "@massimo-cassandro/cookie-consent",
-  "version": "2.2.0",
+  "version": "2.2.1",
   "description": "Small and customizable script to display a cookie consent banner",
   "main": "cookie-consent.js",
   "scripts": {
