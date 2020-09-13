@@ -1,8 +1,0 @@
-/*@preserve
- *
- * Cookie Consent Manager
- * Massimo Cassandro 2015-2020
- * https://github.com/massimo-cassandro/cookie-consent
- *
- */
-export function cookie_consent(e){"use strict";const n={message:'Questo sito utilizza cookie, anche di terze parti anonimizzati,\n        per garantirti la migliore esperienza di navigazione.\n        Continuando a navigare su questo sito, si acconsente al loro utilizzo.<br>\n        Consulta la pagina della\n        <a href="/privacy-policy" rel="noopener noreferrer nofollow">\n        Privacy Policy</a> per maggiori informazioni.',btn_text:"Ho capito",banner_aria_label:"Consenso Cookie",btn_aria_label:"Dai il consenso per l'utilizzo dei cookie",btn_class:""};if(-1===document.cookie.indexOf("cookie_consent=accepted")){(e=Object.assign(n,e)).btn_class&&(e.btn_class=` class="${e.btn_class}"`),document.body.insertAdjacentHTML("beforeend",`\n      \x3c!--googleoff: all--\x3e\n      <div class="cookie-consent" role="dialog" aria-live="polite" aria-label="${e.banner_aria_label}" aria-describedby="mcc-descr">\n        <div id="mcc-descr">${e.message}</div>\n        <div class="mcc__btn">\n          <button type="button" aria-label="${e.btn_aria_label}"${e.btn_class}>\n            ${e.btn_text}\n          </button>\n        </div>\n      </div>\n      \x3c!--googleon: all--\x3e\n    `);let o=document.querySelector(".cookie-consent");o.querySelector(".mcc__btn button").addEventListener("click",()=>{o.addEventListener("transitionend",()=>{o.remove()}),o.classList.add("mcc-fade-out"),(()=>{let e=new Date;e.setHours(e.getHours()+8760);let n=["cookie_consent=accepted","expires="+e.toUTCString(),"path=/","SameSite=Lax"];document.cookie=n.join(";")})()},!1)}}

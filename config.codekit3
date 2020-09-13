@@ -54,17 +54,6 @@
 		"oS": 3,
 		"sct": 0
 		},
-	"/cookie-consent-min.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/cookie-consent-min-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
 	"/cookie-consent.code-workspace": {
 		"cB": 0,
 		"ft": 8192,
@@ -77,10 +66,10 @@
 		"bF": 0,
 		"ft": 64,
 		"ma": 0,
-		"mi": 1,
-		"oA": 0,
+		"mi": 0,
+		"oA": 1,
 		"oAP": "/cookie-consent-min.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 3,
 		"tS": 0
 		},
@@ -152,7 +141,7 @@
 	},
 "projectAttributes": {
 	"creationDate": 611139937.19289899,
-	"displayValue": "m-cookie-consent",
+	"displayValue": "cookie-consent",
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "brackets-red",
 	"iconImageWasSetByUser": 1
