@@ -1,8 +1,9 @@
 {
   "name": "@massimo-cassandro/cookie-consent",
-  "version": "2.2.1",
+  "version": "2.2.2",
   "description": "Small and customizable script to display a cookie consent banner",
-  "main": "cookie-consent.js",
+  "main": "./cookie-consent.js",
+  "style": "./_cookie-consent.scss",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
