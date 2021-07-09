@@ -1,6 +1,6 @@
 {
   "name": "@massimo-cassandro/cookie-consent",
-  "version": "2.2.2",
+  "version": "2.2.3",
   "description": "Small and customizable script to display a cookie consent banner",
   "main": "./cookie-consent.js",
   "style": "./_cookie-consent.scss",
@@ -25,6 +25,10 @@
     "url": "https://github.com/massimo-cassandro/cookie-consent/issues"
   },
   "homepage": "https://github.com/massimo-cassandro/cookie-consent#readme",
+  "files": [
+    "cookie-consent.js",
+    "_cookie-consent.scss"
+  ],
   "devDependencies": {
     "eslint": "^7.28.0",
     "stylelint": "^13.13.1",
