@@ -17,7 +17,7 @@ Import `cookie-consent.js` as es6 module to your project and add
 `cookie-consent.scss` to your styles (you can also use the compiled css version in the demo folder).
 
 ```javascript
-import {cookie_consent} from '@massimo-cassandro/cookie-consent'
+import {cookie_consent} from '@massimo-cassandro/cookie-consent';
 ```
 
 Many elements of scss can be customized:
