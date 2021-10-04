@@ -53,7 +53,7 @@ export function cookie_consent (params) {
       <!--googleoff: all-->
       <div class="cookie-consent" role="dialog" aria-live="polite" aria-label="${params.banner_aria_label}" aria-describedby="mcc-descr">
         <div id="mcc-descr">${params.message}</div>
-        <div class="mcc__btn">
+        <div class="mcc-btn">
           <button type="button" aria-label="${params.btn_aria_label}"${params.btn_class}>
             ${params.btn_text}
           </button>
@@ -64,7 +64,7 @@ export function cookie_consent (params) {
 
     let cookie_banner = document.querySelector('.cookie-consent');
 
-    cookie_banner.querySelector('.mcc__btn button')
+    cookie_banner.querySelector('.mcc-btn button')
       .addEventListener('click', () => {
         cookie_banner.addEventListener('transitionend', () => {
           cookie_banner.remove();

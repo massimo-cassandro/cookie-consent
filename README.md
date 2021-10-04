@@ -17,7 +17,7 @@ Import `cookie-consent.js` as es6 module to your project and add
 `cookie-consent.scss` to your styles (you can also use the compiled css version in the demo folder).
 
 ```javascript
-import {cookie_consent} from './path/to/cookie-consent'
+import {cookie_consent} from '@massimo-cassandro/cookie-consent'
 ```
 
 Many elements of scss can be customized:
@@ -39,7 +39,7 @@ $mcc-button-hover-text-color: #000;
 
 $mcc-box-shadow: 0 0 4px rgba(#000, .6); // set to false or none to disable
 
-@import './path/to/cookie-consent';
+@import '@massimo-cassandro/cookie-consent';
 ```
 
 To activate the banner, invoke the function adding some parameter:
