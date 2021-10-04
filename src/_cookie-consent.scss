@@ -1,0 +1,99 @@
+$mcc-font-family: false !default; // set to false to inherit document font-family
+$mcc-banner-bg-color: #444 !default;
+$mcc-banner-text-color: #fff !default;
+
+$mcc-link-color: #fc0 !default;
+$mcc-link-hover-color: #987a05 !default;
+$mcc-link-text-decoration: none !default;
+$mcc-link-hover-text-decoration: underline !default;
+
+$mcc-button-bg-color: #fc0 !default;
+$mcc-button-text-color: #000 !default;
+$mcc-button-hover-bg-color: #987a05 !default;
+$mcc-button-hover-text-color: #000 !default;
+
+$mcc-box-shadow: 0 0 4px rgba(0, 0, 0, .6) !default; // set to false or none to disable
+
+.cookie-consent {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 10000;
+  box-sizing: border-box;
+  width: calc(100% - 2rem);
+  padding: .6rem;
+  color: $mcc-banner-text-color;
+  background-color: $mcc-banner-bg-color;
+  animation: fadeIn 1s linear;
+
+  @if $mcc-box-shadow {
+    box-shadow: $mcc-box-shadow;
+  }
+
+  @if $mcc-font-family {
+    font-family: $mcc-font-family;
+  }
+
+  &.mcc-fade-out {
+    opacity: 0;
+    transition: opacity 1s linear;
+  }
+
+  a {
+    color: $mcc-link-color;
+    text-decoration: $mcc-link-text-decoration;
+
+    &:hover {
+      color: $mcc-link-hover-color;
+      text-decoration: $mcc-link-hover-text-decoration;
+    }
+  }
+
+  .mcc-btn {
+    margin-top: 2rem;
+    text-align: center;
+    button {
+      display: block;
+      width: 100%;
+      padding: .6rem 2rem;
+      font-size: 1.1em;
+      color: $mcc-button-text-color;
+      background-color: $mcc-button-bg-color;
+      border: none;
+      border-radius: 4px;
+
+      &:hover {
+        color: $mcc-button-hover-text-color;
+        background-color: $mcc-button-hover-bg-color;
+      }
+    }
+  }
+  .mcc-nowrap {
+    white-space: nowrap;
+  }
+
+  @media screen and (min-width: 736px) {
+    max-width: 500px;
+
+    .mcc-btn {
+      text-align: right;
+      button {
+        display: inline-block;
+        width: auto;
+      }
+    }
+  }
+
+  @media print {
+    display: none;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

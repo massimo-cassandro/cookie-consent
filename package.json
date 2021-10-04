@@ -1,11 +1,11 @@
 {
   "name": "@massimo-cassandro/cookie-consent",
-  "version": "2.2.3",
+  "version": "3.0.0",
   "description": "Small and customizable script to display a cookie consent banner",
-  "main": "./cookie-consent.js",
-  "style": "./_cookie-consent.scss",
+  "main": "./src/cookie-consent.js",
+  "style": "./src/_cookie-consent.scss",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "sass-demo": "npx sass _cookie-consent.scss:demo/cookie-consent.css --load-path=node_modules/ --style=expanded --watch"
   },
   "repository": {
     "type": "git",
@@ -26,11 +26,11 @@
   },
   "homepage": "https://github.com/massimo-cassandro/cookie-consent#readme",
   "files": [
-    "cookie-consent.js",
-    "_cookie-consent.scss"
+    "src/**/*.*"
   ],
   "devDependencies": {
     "eslint": "^7.28.0",
+    "sass": "^1.42.1",
     "stylelint": "^13.13.1",
     "stylelint-config-twbs-bootstrap": "^2.2.0"
   }
