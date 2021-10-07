@@ -1,6 +1,6 @@
 # Cookie consent banner
 
-**v.2 (was “consenso-cookie” in v.1)**
+**v.3 (was “consenso-cookie” in v.1)**
 
 <https://github.com/massimo-cassandro/cookie-consent>
 
