@@ -1,9 +1,9 @@
 {
   "name": "@massimo-cassandro/cookie-consent",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "Small and customizable script to display a cookie consent banner",
   "main": "./src/cookie-consent.js",
-  "style": "./src/_cookie-consent.scss",
+  "sass": "./src/_cookie-consent.scss",
   "scripts": {
     "sass-demo": "npx sass _cookie-consent.scss:demo/cookie-consent.css --load-path=node_modules/ --style=expanded --watch"
   },
