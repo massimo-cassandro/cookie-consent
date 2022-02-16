@@ -37,6 +37,8 @@ $mcc-button-text-color: #000;
 $mcc-button-hover-bg-color: darken($mcc-button-bg-color, 10);
 $mcc-button-hover-text-color: #000;
 
+$mcc-border-radius: 0;
+
 $mcc-box-shadow: 0 0 4px rgba(#000, .6); // set to false or none to disable
 
 @import '@massimo-cassandro/cookie-consent';
